@@ -96,7 +96,3 @@ export class PipelineStack extends Stack {
 
 
 }
-
-
-//https://medium.com/hatchsoftware/hosting-a-static-single-page-application-on-aws-using-the-cdk-f601b3ed9a6
-//https://aws.plainenglish.io/cdk-pipelines-beyond-basics-37b731b7a182
