@@ -1,0 +1,18 @@
+$util.qr($context.args.input.put("createdAt", $util.defaultIfNull($ctx.args.input.createdAt, $util.time.nowISO8601() )))
+$util.qr($context.args.input.put("value", $util.defaultIfNull($ctx.args.input.value, 0)))
+{
+  "version": "2017-02-28",
+  "operation": "PutItem",
+  "key": {
+    "name": $util.dynamodb.toDynamoDBJson($ctx.args.input.name),
+    "createdAt": $util.dynamodb.toDynamoDBJson($ctx.args.input.createdAt),
+  },
+  "attributeValues": $util.dynamodb.toMapValuesJson($ctx.args.input),
+  "condition": {
+    "expression": "attribute_not_exists(#name) AND attribute_not_exists(#createdAt)",
+    "expressionNames": {
+      "#name": "name",
+      "#createdAt": "createdAt",
+    },
+  },
+}

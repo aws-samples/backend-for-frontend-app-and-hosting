@@ -1,0 +1,15 @@
+*.js
+!jest.config.js
+*.d.ts
+node_modules
+build/**/*.*
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+
+# MAC
+.DS_Store
+
+# Keep all Important.md for instructions
+!/**/important.md
