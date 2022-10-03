@@ -1,4 +1,4 @@
-# Backend For Frontned with Frontend Host and Deploy
+# Backend For Frontend with Frontend Host and Deploy
 
 This solution deploys both a Frontend Application, and the Backend For Frontend including the data API and hosting for the Frontend Application, and joins the Backend to the Frontend through the use of pre-deploy script and CDK Pipeline Deploy for CI/CD.
 

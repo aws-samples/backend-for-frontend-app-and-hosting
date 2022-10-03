@@ -4,6 +4,9 @@
 node_modules
 build/**/*.*
 
+# keep frontend JS
+!src/**/*.js
+
 # CDK asset staging directory
 .cdk.staging
 cdk.out
