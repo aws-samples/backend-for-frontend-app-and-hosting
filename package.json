@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@aws-amplify/auth": "^4.6.8",
+    "@aws-amplify/cache": "^4.0.57",
     "@aws-amplify/ui-react": "^3.5.4",
     "@nivo/core": "^0.80.0",
     "@nivo/line": "^0.80.0",
